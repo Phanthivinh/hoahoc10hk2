@@ -1,0 +1,1485 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Hoá 10 HK2 Online | Học cùng đồng hành – Từ cơ bản đến 8+ điểm</title>
+    <meta name="description"
+        content="Khoá học Hoá 10 Học kỳ 2 online có đồng hành: Năng lượng hoá học, Tốc độ phản ứng, Nhóm Halogen. 18 video + 5 Zoom + chấm chữa bài cá nhân. Học từ 1/3 – 10/5/2026." />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@300;400;500;600;700;800;900&display=swap"
+        rel="stylesheet" />
+    <style>
+        *,
+        *::before,
+        *::after {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        :root {
+            --primary: #00c9a7;
+            --primary-dark: #009e82;
+            --accent: #7c3aed;
+            --accent2: #f59e0b;
+            --bg: #0b0f1a;
+            --bg2: #111827;
+            --bg3: #1a2235;
+            --card: #161d2e;
+            --border: rgba(255, 255, 255, 0.08);
+            --text: #e2e8f0;
+            --muted: #94a3b8;
+            --white: #ffffff;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-family: 'Be Vietnam Pro', sans-serif;
+            background: var(--bg);
+            color: var(--text);
+            line-height: 1.7;
+            overflow-x: hidden;
+        }
+
+        /* ===== UTILITY ===== */
+        .container {
+            max-width: 1100px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        .badge {
+            display: inline-block;
+            background: rgba(0, 201, 167, 0.15);
+            color: var(--primary);
+            border: 1px solid rgba(0, 201, 167, 0.3);
+            border-radius: 100px;
+            padding: 6px 16px;
+            font-size: 13px;
+            font-weight: 600;
+            letter-spacing: 0.05em;
+            text-transform: uppercase;
+        }
+
+        .section-title {
+            font-size: clamp(26px, 4vw, 38px);
+            font-weight: 800;
+            line-height: 1.25;
+            color: var(--white);
+        }
+
+        .highlight {
+            color: var(--primary);
+        }
+
+        .accent {
+            color: var(--accent2);
+        }
+
+        .btn {
+            display: inline-block;
+            padding: 16px 36px;
+            border-radius: 12px;
+            font-size: 16px;
+            font-weight: 700;
+            text-decoration: none;
+            cursor: pointer;
+            transition: all 0.25s ease;
+            border: none;
+        }
+
+        .btn-primary {
+            background: linear-gradient(135deg, var(--primary), var(--primary-dark));
+            color: #0b0f1a;
+            box-shadow: 0 8px 32px rgba(0, 201, 167, 0.35);
+        }
+
+        .btn-primary:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 12px 40px rgba(0, 201, 167, 0.5);
+        }
+
+        .btn-outline {
+            background: transparent;
+            color: var(--primary);
+            border: 2px solid var(--primary);
+        }
+
+        .btn-outline:hover {
+            background: rgba(0, 201, 167, 0.1);
+        }
+
+        /* ===== HEADER ===== */
+        header {
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            z-index: 100;
+            backdrop-filter: blur(16px);
+            background: rgba(11, 15, 26, 0.85);
+            border-bottom: 1px solid var(--border);
+        }
+
+        .header-inner {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 14px 20px;
+            max-width: 1100px;
+            margin: 0 auto;
+        }
+
+        .logo {
+            font-size: 20px;
+            font-weight: 800;
+            color: var(--white);
+        }
+
+        .logo span {
+            color: var(--primary);
+        }
+
+        .header-cta {
+            font-size: 14px;
+        }
+
+        /* ===== HERO ===== */
+        #hero {
+            padding: 140px 20px 80px;
+            text-align: center;
+            position: relative;
+            overflow: hidden;
+        }
+
+        #hero::before {
+            content: '';
+            position: absolute;
+            top: -200px;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 700px;
+            height: 700px;
+            background: radial-gradient(circle, rgba(124, 58, 237, 0.2) 0%, transparent 70%);
+            pointer-events: none;
+        }
+
+        #hero::after {
+            content: '';
+            position: absolute;
+            bottom: -100px;
+            right: -100px;
+            width: 400px;
+            height: 400px;
+            background: radial-gradient(circle, rgba(0, 201, 167, 0.15) 0%, transparent 70%);
+            pointer-events: none;
+        }
+
+        .hero-tag {
+            margin-bottom: 20px;
+        }
+
+        .hero-headline {
+            font-size: clamp(32px, 5.5vw, 58px);
+            font-weight: 900;
+            line-height: 1.15;
+            color: var(--white);
+            margin-bottom: 20px;
+        }
+
+        .hero-sub {
+            font-size: clamp(16px, 2vw, 20px);
+            color: var(--muted);
+            max-width: 640px;
+            margin: 0 auto 36px;
+        }
+
+        .hero-ctas {
+            display: flex;
+            gap: 14px;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+
+        .hero-stats {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 32px;
+            margin-top: 64px;
+            padding-top: 40px;
+            border-top: 1px solid var(--border);
+        }
+
+        .stat-item {
+            text-align: center;
+        }
+
+        .stat-num {
+            font-size: 36px;
+            font-weight: 900;
+            color: var(--primary);
+            display: block;
+            line-height: 1;
+        }
+
+        .stat-label {
+            font-size: 14px;
+            color: var(--muted);
+            margin-top: 6px;
+        }
+
+        /* ===== PAIN / FOR WHO ===== */
+        #for-who {
+            padding: 80px 20px;
+        }
+
+        .for-who-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 24px;
+            margin-top: 40px;
+        }
+
+        .fwg-card {
+            background: var(--card);
+            border: 1px solid var(--border);
+            border-radius: 16px;
+            padding: 28px;
+        }
+
+        .fwg-card.pain {
+            border-color: rgba(239, 68, 68, 0.3);
+        }
+
+        .fwg-card.gain {
+            border-color: rgba(0, 201, 167, 0.3);
+        }
+
+        .fwg-title {
+            font-size: 18px;
+            font-weight: 700;
+            margin-bottom: 16px;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .fwg-title .icon {
+            font-size: 22px;
+        }
+
+        .fwg-list {
+            list-style: none;
+        }
+
+        .fwg-list li {
+            padding: 8px 0;
+            border-bottom: 1px solid var(--border);
+            font-size: 15px;
+            color: var(--muted);
+            display: flex;
+            align-items: flex-start;
+            gap: 10px;
+        }
+
+        .fwg-list li:last-child {
+            border-bottom: none;
+        }
+
+        .fwg-list li .dot {
+            flex-shrink: 0;
+            margin-top: 4px;
+        }
+
+        /* ===== CURRICULUM ===== */
+        #curriculum {
+            padding: 80px 20px;
+            background: var(--bg2);
+        }
+
+        .curriculum-intro {
+            text-align: center;
+            margin-bottom: 50px;
+        }
+
+        .topics-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 24px;
+        }
+
+        .topic-card {
+            background: var(--card);
+            border: 1px solid var(--border);
+            border-radius: 20px;
+            padding: 32px;
+            position: relative;
+            overflow: hidden;
+            transition: transform 0.25s, box-shadow 0.25s;
+        }
+
+        .topic-card:hover {
+            transform: translateY(-4px);
+            box-shadow: 0 20px 60px rgba(0, 0, 0, 0.4);
+        }
+
+        .topic-card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 3px;
+        }
+
+        .topic-card.t1::before {
+            background: linear-gradient(90deg, #f59e0b, #ef4444);
+        }
+
+        .topic-card.t2::before {
+            background: linear-gradient(90deg, #3b82f6, #8b5cf6);
+        }
+
+        .topic-card.t3::before {
+            background: linear-gradient(90deg, #00c9a7, #3b82f6);
+        }
+
+        .topic-num {
+            font-size: 12px;
+            font-weight: 700;
+            letter-spacing: 0.1em;
+            text-transform: uppercase;
+            color: var(--muted);
+            margin-bottom: 10px;
+        }
+
+        .topic-name {
+            font-size: 20px;
+            font-weight: 800;
+            color: var(--white);
+            margin-bottom: 20px;
+        }
+
+        .topic-meta {
+            display: flex;
+            gap: 10px;
+            flex-wrap: wrap;
+            margin-bottom: 20px;
+        }
+
+        .meta-pill {
+            background: rgba(255, 255, 255, 0.06);
+            border: 1px solid var(--border);
+            border-radius: 100px;
+            padding: 4px 12px;
+            font-size: 12px;
+            font-weight: 600;
+            color: var(--muted);
+        }
+
+        .topic-lessons {
+            list-style: none;
+        }
+
+        .topic-lessons li {
+            padding: 8px 0;
+            border-bottom: 1px solid var(--border);
+            font-size: 14px;
+            color: var(--muted);
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .topic-lessons li:last-child {
+            border-bottom: none;
+        }
+
+        .lesson-icon {
+            color: var(--primary);
+            font-size: 16px;
+            flex-shrink: 0;
+        }
+
+        /* ===== HOW IT WORKS ===== */
+        #how {
+            padding: 80px 20px;
+        }
+
+        .how-intro {
+            text-align: center;
+            margin-bottom: 50px;
+        }
+
+        .how-steps {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 20px;
+        }
+
+        .step-card {
+            background: var(--card);
+            border: 1px solid var(--border);
+            border-radius: 16px;
+            padding: 28px 24px;
+            text-align: center;
+        }
+
+        .step-num {
+            width: 48px;
+            height: 48px;
+            border-radius: 12px;
+            background: linear-gradient(135deg, var(--primary), var(--accent));
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 20px;
+            font-weight: 900;
+            color: var(--white);
+            margin: 0 auto 16px;
+        }
+
+        .step-card h4 {
+            font-size: 16px;
+            font-weight: 700;
+            color: var(--white);
+            margin-bottom: 8px;
+        }
+
+        .step-card p {
+            font-size: 14px;
+            color: var(--muted);
+        }
+
+        /* ===== VIDEO STRUCT ===== */
+        #video-struct {
+            padding: 80px 20px;
+            background: var(--bg2);
+        }
+
+        .vs-intro {
+            text-align: center;
+            margin-bottom: 50px;
+        }
+
+        .vs-parts {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+            gap: 16px;
+        }
+
+        .vs-part {
+            background: var(--card);
+            border: 1px solid var(--border);
+            border-radius: 14px;
+            padding: 24px 20px;
+            position: relative;
+        }
+
+        .vs-part-label {
+            font-size: 11px;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 0.1em;
+            color: var(--primary);
+            margin-bottom: 8px;
+        }
+
+        .vs-part h4 {
+            font-size: 15px;
+            font-weight: 700;
+            color: var(--white);
+            margin-bottom: 6px;
+        }
+
+        .vs-part p {
+            font-size: 13px;
+            color: var(--muted);
+        }
+
+        /* ===== RESULTS ===== */
+        #results {
+            padding: 80px 20px;
+        }
+
+        .results-intro {
+            text-align: center;
+            margin-bottom: 50px;
+        }
+
+        .results-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+            gap: 20px;
+        }
+
+        .result-card {
+            background: linear-gradient(135deg, var(--card), var(--bg3));
+            border: 1px solid var(--border);
+            border-radius: 16px;
+            padding: 28px;
+        }
+
+        .result-icon {
+            font-size: 36px;
+            margin-bottom: 14px;
+        }
+
+        .result-card h4 {
+            font-size: 17px;
+            font-weight: 700;
+            color: var(--white);
+            margin-bottom: 8px;
+        }
+
+        .result-card p {
+            font-size: 14px;
+            color: var(--muted);
+        }
+
+        /* ===== PRICING ===== */
+        #pricing {
+            padding: 80px 20px;
+            background: var(--bg2);
+        }
+
+        .pricing-intro {
+            text-align: center;
+            margin-bottom: 50px;
+        }
+
+        .pricing-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 24px;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        .price-card {
+            background: var(--card);
+            border: 1px solid var(--border);
+            border-radius: 20px;
+            padding: 36px 32px;
+            position: relative;
+        }
+
+        .price-card.featured {
+            border-color: var(--primary);
+            box-shadow: 0 0 40px rgba(0, 201, 167, 0.15);
+        }
+
+        .popular-tag {
+            position: absolute;
+            top: -14px;
+            left: 50%;
+            transform: translateX(-50%);
+            background: linear-gradient(135deg, var(--primary), var(--primary-dark));
+            color: #0b0f1a;
+            font-size: 12px;
+            font-weight: 700;
+            padding: 5px 18px;
+            border-radius: 100px;
+            white-space: nowrap;
+        }
+
+        .price-tier {
+            font-size: 14px;
+            font-weight: 600;
+            color: var(--muted);
+            margin-bottom: 10px;
+        }
+
+        .price-name {
+            font-size: 22px;
+            font-weight: 800;
+            color: var(--white);
+            margin-bottom: 20px;
+        }
+
+        .price-amount {
+            font-size: 42px;
+            font-weight: 900;
+            color: var(--primary);
+            line-height: 1;
+            margin-bottom: 6px;
+        }
+
+        .price-period {
+            font-size: 14px;
+            color: var(--muted);
+            margin-bottom: 28px;
+        }
+
+        .price-features {
+            list-style: none;
+            margin-bottom: 32px;
+        }
+
+        .price-features li {
+            padding: 10px 0;
+            border-bottom: 1px solid var(--border);
+            font-size: 14px;
+            color: var(--muted);
+            display: flex;
+            align-items: flex-start;
+            gap: 10px;
+        }
+
+        .price-features li:last-child {
+            border-bottom: none;
+        }
+
+        .check {
+            color: var(--primary);
+            flex-shrink: 0;
+            margin-top: 2px;
+        }
+
+        .cross {
+            color: #ef4444;
+            flex-shrink: 0;
+            margin-top: 2px;
+        }
+
+        /* ===== FAQ ===== */
+        #faq {
+            padding: 80px 20px;
+        }
+
+        .faq-intro {
+            text-align: center;
+            margin-bottom: 50px;
+        }
+
+        .faq-list {
+            max-width: 750px;
+            margin: 0 auto;
+        }
+
+        .faq-item {
+            background: var(--card);
+            border: 1px solid var(--border);
+            border-radius: 14px;
+            margin-bottom: 14px;
+            overflow: hidden;
+        }
+
+        .faq-q {
+            padding: 20px 24px;
+            font-size: 16px;
+            font-weight: 600;
+            color: var(--white);
+            cursor: pointer;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            list-style: none;
+        }
+
+        .faq-q::-webkit-details-marker {
+            display: none;
+        }
+
+        .faq-a {
+            padding: 0 24px 20px;
+            font-size: 15px;
+            color: var(--muted);
+            line-height: 1.8;
+        }
+
+        /* ===== TIMELINE ===== */
+        #timeline {
+            padding: 80px 20px;
+            background: var(--bg2);
+        }
+
+        .tl-intro {
+            text-align: center;
+            margin-bottom: 50px;
+        }
+
+        .tl-grid {
+            display: flex;
+            gap: 0;
+            max-width: 900px;
+            margin: 0 auto;
+            flex-wrap: wrap;
+        }
+
+        .tl-item {
+            flex: 1;
+            min-width: 160px;
+            padding: 20px 16px;
+            border-left: 2px solid var(--border);
+            position: relative;
+        }
+
+        .tl-item:first-child {
+            border-left: none;
+        }
+
+        .tl-dot {
+            width: 10px;
+            height: 10px;
+            background: var(--primary);
+            border-radius: 50%;
+            position: absolute;
+            left: -6px;
+            top: 24px;
+        }
+
+        .tl-item:first-child .tl-dot {
+            left: 0;
+        }
+
+        .tl-date {
+            font-size: 12px;
+            font-weight: 700;
+            color: var(--primary);
+            margin-bottom: 6px;
+        }
+
+        .tl-event {
+            font-size: 14px;
+            font-weight: 600;
+            color: var(--white);
+            margin-bottom: 4px;
+        }
+
+        .tl-desc {
+            font-size: 13px;
+            color: var(--muted);
+        }
+
+        /* ===== CTA FINAL ===== */
+        #cta-final {
+            padding: 100px 20px;
+            text-align: center;
+            position: relative;
+            overflow: hidden;
+        }
+
+        #cta-final::before {
+            content: '';
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            width: 600px;
+            height: 600px;
+            background: radial-gradient(circle, rgba(0, 201, 167, 0.12), transparent 70%);
+            pointer-events: none;
+        }
+
+        .cta-hl {
+            font-size: clamp(28px, 4vw, 46px);
+            font-weight: 900;
+            color: var(--white);
+            margin-bottom: 16px;
+        }
+
+        .cta-sub {
+            font-size: 18px;
+            color: var(--muted);
+            max-width: 560px;
+            margin: 0 auto 36px;
+        }
+
+        .deadline-note {
+            margin-top: 20px;
+            font-size: 14px;
+            color: var(--muted);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 8px;
+        }
+
+        /* ===== FOOTER ===== */
+        footer {
+            background: var(--bg);
+            border-top: 1px solid var(--border);
+            padding: 40px 20px;
+            text-align: center;
+            font-size: 14px;
+            color: var(--muted);
+        }
+
+        footer strong {
+            color: var(--white);
+        }
+
+        /* ===== ANIMATIONS ===== */
+        @keyframes float {
+
+            0%,
+            100% {
+                transform: translateY(0);
+            }
+
+            50% {
+                transform: translateY(-10px);
+            }
+        }
+
+        .float {
+            animation: float 4s ease-in-out infinite;
+        }
+
+        /* ===== BANNER IMAGE ===== */
+        #banner-img {
+            padding: 0 20px 60px;
+            text-align: center;
+        }
+
+        #banner-img img {
+            max-width: 900px;
+            width: 100%;
+            border-radius: 20px;
+            box-shadow: 0 24px 80px rgba(0, 0, 0, 0.5);
+            border: 1px solid var(--border);
+        }
+
+        /* ===== INSTRUCTOR SHOWCASE ===== */
+        #instructor {
+            padding: 60px 20px;
+            background: var(--bg2);
+        }
+
+        .instructor-inner {
+            max-width: 900px;
+            margin: 0 auto;
+            text-align: center;
+        }
+
+        .instructor-inner .badge {
+            margin-bottom: 20px;
+            display: inline-block;
+        }
+
+        .instructor-inner h2 {
+            margin-bottom: 28px;
+        }
+
+        #instructor img {
+            max-width: 860px;
+            width: 100%;
+            border-radius: 20px;
+            box-shadow: 0 24px 80px rgba(0, 0, 0, 0.5);
+            border: 2px solid rgba(0, 201, 167, 0.25);
+        }
+
+        /* ===== RESPONSIVE ===== */
+        @media (max-width: 680px) {
+            .for-who-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .pricing-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .hero-stats {
+                gap: 24px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- HEADER -->
+    <header>
+        <div class="header-inner">
+            <div class="logo">Hoá<span>10</span> Online</div>
+            <a href="#pricing" class="btn btn-primary btn-sm" style="padding: 10px 22px; font-size: 14px;">Đăng ký ngay
+                →</a>
+        </div>
+    </header>
+
+    <!-- HERO -->
+    <section id="hero">
+        <div class="container">
+            <div class="hero-tag">
+                <span class="badge">🔬 Khoá học Hoá 10 – Học kỳ 2 · 2025–2026</span>
+            </div>
+            <h1 class="hero-headline">
+                Chinh phục Hoá 10<br />
+                <span class="highlight">từ nền tảng đến 8+ điểm</span><br />
+                — có thầy đồng hành từng bước
+            </h1>
+            <p class="hero-sub">
+                Khoá học online có định hướng cá nhân. Mỗi bài tập được chấm chữa, mỗi lỗi sai được phân tích.
+                Không chỉ xem video — bạn thực sự được <strong>học</strong>.
+            </p>
+            <div class="hero-ctas">
+                <a href="#pricing" class="btn btn-primary">Đăng ký khoá học 🚀</a>
+                <a href="#curriculum" class="btn btn-outline">Xem nội dung chương trình</a>
+            </div>
+
+            <div class="hero-stats">
+                <div class="stat-item">
+                    <span class="stat-num">18</span>
+                    <div class="stat-label">Video bài giảng</div>
+                </div>
+                <div class="stat-item">
+                    <span class="stat-num">5</span>
+                    <div class="stat-label">Buổi Zoom trực tiếp</div>
+                </div>
+                <div class="stat-item">
+                    <span class="stat-num">3</span>
+                    <div class="stat-label">Chủ đề trọng tâm</div>
+                </div>
+                <div class="stat-item">
+                    <span class="stat-num">10/5</span>
+                    <div class="stat-label">Kết thúc đúng mùa thi</div>
+                </div>
+                <div class="stat-item">
+                    <span class="stat-num">8+</span>
+                    <div class="stat-label">Mục tiêu điểm số</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- BANNER IMAGE - Slide2 -->
+    <section id="banner-img">
+        <div class="container">
+            <img src="../../../ảnh quảng cáo/Slide2.PNG"
+                alt="Khoá học Hoá Học 10 - Tự tin đạt 7+ - 18 video, 5 buổi Zoom, Chấm chữa trực tiếp" loading="lazy" />
+        </div>
+    </section>
+
+    <!-- FOR WHO -->
+    <section id="for-who">
+        <div class="container">
+            <div style="text-align:center; margin-bottom: 16px;">
+                <span class="badge">Khoá học này dành cho ai?</span>
+            </div>
+            <h2 class="section-title" style="text-align:center; margin-bottom: 8px;">
+                Bạn có đang ở trong<br /><span class="highlight">những tình huống này không?</span>
+            </h2>
+            <div class="for-who-grid">
+                <div class="fwg-card pain">
+                    <div class="fwg-title">
+                        <span class="icon">😰</span>
+                        <span style="color:#ef4444;">Nỗi lo thường gặp</span>
+                    </div>
+                    <ul class="fwg-list">
+                        <li><span class="dot" style="color:#ef4444;">✗</span> Học xong vẫn không làm được bài, không
+                            biết sai ở đâu</li>
+                        <li><span class="dot" style="color:#ef4444;">✗</span> Xem video học xong nhưng không có ai chữa
+                            bài giùm</li>
+                        <li><span class="dot" style="color:#ef4444;">✗</span> Hoá học nhiều công thức, không biết tư duy
+                            từ đâu</li>
+                        <li><span class="dot" style="color:#ef4444;">✗</span> Lo lắng phần kiến thức lớp 10 không đủ để
+                            thi tốt nghiệp</li>
+                        <li><span class="dot" style="color:#ef4444;">✗</span> Học một mình, không ai hỏi, không ai đốc
+                            thúc</li>
+                    </ul>
+                </div>
+                <div class="fwg-card gain">
+                    <div class="fwg-title">
+                        <span class="icon">🎯</span>
+                        <span style="color:var(--primary);">Sau khoá học này</span>
+                    </div>
+                    <ul class="fwg-list">
+                        <li><span class="dot" style="color:var(--primary);">✓</span> Nắm chắc lý thuyết, nhận ra ngay
+                            dạng bài và hướng giải</li>
+                        <li><span class="dot" style="color:var(--primary);">✓</span> Mỗi bài làm đều được thầy chấm và
+                            nhận xét cụ thể</li>
+                        <li><span class="dot" style="color:var(--primary);">✓</span> Biết cách tư duy Hoá học – không
+                            phải học vẹt</li>
+                        <li><span class="dot" style="color:var(--primary);">✓</span> Tự tin làm các dạng bài trong cấu
+                            trúc thi mới 2025–2026</li>
+                        <li><span class="dot" style="color:var(--primary);">✓</span> Có lộ trình rõ ràng, có thầy đồng
+                            hành từng tuần</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CURRICULUM -->
+    <section id="curriculum">
+        <div class="container">
+            <div class="curriculum-intro">
+                <span class="badge">Nội dung chương trình</span>
+                <h2 class="section-title" style="margin-top:16px;">
+                    3 chủ đề trọng tâm<br /><span class="highlight">học kỳ 2 Hoá 10</span>
+                </h2>
+                <p style="color:var(--muted); margin-top: 12px; max-width:560px; margin-left:auto; margin-right:auto;">
+                    Toàn bộ kiến thức được thiết kế bám sát chương trình GDPT 2018 và cấu trúc thi tốt nghiệp THPT mới.
+                </p>
+            </div>
+            <div class="topics-grid">
+                <!-- Topic 1 -->
+                <div class="topic-card t1">
+                    <div class="topic-num">Chủ đề 5</div>
+                    <div class="topic-name">⚡ Năng lượng hoá học</div>
+                    <div class="topic-meta">
+                        <span class="meta-pill">5 video</span>
+                        <span class="meta-pill">3 Buổi Zoom</span>
+                    </div>
+                    <ul class="topic-lessons">
+                        <li><span class="lesson-icon">▶</span> Phản ứng thu nhiệt & toả nhiệt</li>
+                        <li><span class="lesson-icon">▶</span> Điều kiện chuẩn & Nhiệt tạo thành chuẩn</li>
+                        <li><span class="lesson-icon">▶</span> Biến thiên enthalpy ΔH, phương trình nhiệt hoá học</li>
+                        <li><span class="lesson-icon">▶</span> Tính nhiệt phản ứng từ nhiệt tạo thành</li>
+                        <li><span class="lesson-icon">▶</span> Tính nhiệt phản ứng qua năng lượng liên kết</li>
+                    </ul>
+                </div>
+                <!-- Topic 2 -->
+                <div class="topic-card t2">
+                    <div class="topic-num">Chủ đề 6</div>
+                    <div class="topic-name">⚗️ Tốc độ phản ứng hoá học</div>
+                    <div class="topic-meta">
+                        <span class="meta-pill">5 video</span>
+                        <span class="meta-pill">2 Buổi Zoom</span>
+                    </div>
+                    <ul class="topic-lessons">
+                        <li><span class="lesson-icon">▶</span> Khái niệm tốc độ phản ứng</li>
+                        <li><span class="lesson-icon">▶</span> Các yếu tố ảnh hưởng tốc độ phản ứng</li>
+                        <li><span class="lesson-icon">▶</span> Bài tập tính toán tốc độ phản ứng</li>
+                        <li><span class="lesson-icon">▶</span> Ứng dụng thực tế trong đời sống</li>
+                        <li><span class="lesson-icon">▶</span> Bài toán nâng cao, có bối cảnh</li>
+                    </ul>
+                </div>
+                <!-- Topic 3 -->
+                <div class="topic-card t3">
+                    <div class="topic-num">Chủ đề 7</div>
+                    <div class="topic-name">🧂 Nguyên tố nhóm Halogen</div>
+                    <div class="topic-meta">
+                        <span class="meta-pill">8 video</span>
+                        <span class="meta-pill">2 Buổi Zoom</span>
+                    </div>
+                    <ul class="topic-lessons">
+                        <li><span class="lesson-icon">▶</span> Tổng quan về nhóm Halogen</li>
+                        <li><span class="lesson-icon">▶</span> Flo, Clo, Brom, Iot – đặc điểm & phản ứng</li>
+                        <li><span class="lesson-icon">▶</span> Hợp chất của Halogen (HX, muối halogenua)</li>
+                        <li><span class="lesson-icon">▶</span> Nhận biết ion halogenua</li>
+                        <li><span class="lesson-icon">▶</span> Bài tập chuỗi phản ứng & phân tích lỗi sai</li>
+                        <li><span class="lesson-icon">▶</span> Bài tập tổng hợp cấu trúc thi mới</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- HOW IT WORKS -->
+    <section id="how">
+        <div class="container">
+            <div class="how-intro">
+                <span class="badge">Cách thức hoạt động</span>
+                <h2 class="section-title" style="margin-top:16px;">
+                    Quy trình học <span class="highlight">từng tuần</span>
+                </h2>
+                <p style="color:var(--muted); margin-top:12px;">Không phải khoá học tự học thụ động — bạn được đồng hành
+                    thực sự.</p>
+            </div>
+            <div class="how-steps">
+                <div class="step-card">
+                    <div class="step-num">1</div>
+                    <h4>Xem video</h4>
+                    <p>18 video được quay sẵn, xem chủ động theo lịch khoá học, có file lý thuyết kèm theo.</p>
+                </div>
+                <div class="step-card">
+                    <div class="step-num">2</div>
+                    <h4>Làm bài tập</h4>
+                    <p>File bài tập đầy đủ phân loại theo dạng. Học sinh làm vào vở/file, chụp ảnh nộp bài.</p>
+                </div>
+                <div class="step-card">
+                    <div class="step-num">3</div>
+                    <h4>Được chấm & chữa</h4>
+                    <p>Thầy/cô chấm bài, phân tích lỗi sai cụ thể từng bạn. Nhận xét bằng chữ hoặc voice note.</p>
+                </div>
+                <div class="step-card">
+                    <div class="step-num">4</div>
+                    <h4>Zoom trực tiếp</h4>
+                    <p>5 buổi Zoom chữa bài nhóm, hỏi đáp trực tiếp, kiểm tra theo cấu trúc thi mới.</p>
+                </div>
+                <div class="step-card">
+                    <div class="step-num">5</div>
+                    <h4>Kiểm tra & tổng kết</h4>
+                    <p>Đề kiểm tra chuẩn thi tốt nghiệp (TN nhiều PA + Đúng/Sai + Trả lời ngắn) mỗi chủ đề.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- VIDEO STRUCTURE -->
+    <section id="video-struct">
+        <div class="container">
+            <div class="vs-intro">
+                <span class="badge">Cấu trúc từng video</span>
+                <h2 class="section-title" style="margin-top:16px;">
+                    Mỗi video được thiết kế <span class="highlight">có hệ thống</span>
+                </h2>
+            </div>
+            <div class="vs-parts">
+                <div class="vs-part">
+                    <div class="vs-part-label">Phần 1</div>
+                    <h4>📖 Lý thuyết cốt lõi</h4>
+                    <p>Kiến thức cần nắm, trình bày rõ ràng, có sơ đồ tóm tắt.</p>
+                </div>
+                <div class="vs-part">
+                    <div class="vs-part-label">Phần 2</div>
+                    <h4>🗂️ Dạng bài thường gặp</h4>
+                    <p>Phân loại dạng bài, chỉ ra cách nhận dạng từng dạng.</p>
+                </div>
+                <div class="vs-part">
+                    <div class="vs-part-label">Phần 3</div>
+                    <h4>✏️ Bài tập áp dụng</h4>
+                    <p>Thầy/cô giải mẫu chi tiết, giải thích từng bước tư duy.</p>
+                </div>
+                <div class="vs-part">
+                    <div class="vs-part-label">Phần 4</div>
+                    <h4>📝 Bài tập luyện tập</h4>
+                    <p>Bài tương tự để tự làm và nộp, được chấm chữa sau.</p>
+                </div>
+                <div class="vs-part">
+                    <div class="vs-part-label">Phần 5</div>
+                    <h4>🎯 Đề kiểm tra mini</h4>
+                    <p>Trắc nghiệm nhiều PA + Đúng/Sai + Trả lời ngắn theo cấu trúc thi mới.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- TIMELINE -->
+    <section id="timeline">
+        <div class="container">
+            <div class="tl-intro">
+                <span class="badge">Lộ trình học tập</span>
+                <h2 class="section-title" style="margin-top:16px;">Từ <span class="highlight">1/3</span> đến <span
+                        class="highlight">10/5</span></h2>
+                <p style="color:var(--muted); margin-top:12px;">Hoàn thành đúng lịch — kịp mùa ôn thi cuối năm.</p>
+            </div>
+            <div class="tl-grid">
+                <div class="tl-item">
+                    <div class="tl-dot"></div>
+                    <div class="tl-date">1/3/2026</div>
+                    <div class="tl-event">🚀 Khai giảng</div>
+                    <div class="tl-desc">Zoom 1: Hướng dẫn phương pháp học</div>
+                </div>
+                <div class="tl-item">
+                    <div class="tl-dot"></div>
+                    <div class="tl-date">Tháng 3/2026</div>
+                    <div class="tl-event">⚡ Chủ đề 5</div>
+                    <div class="tl-desc">Năng lượng hoá học (5 video + 3 Zoom)</div>
+                </div>
+                <div class="tl-item">
+                    <div class="tl-dot"></div>
+                    <div class="tl-date">Tháng 4/2026</div>
+                    <div class="tl-event">⚗️ Chủ đề 6 & 7</div>
+                    <div class="tl-desc">Tốc độ phản ứng + Halogen (13 video + 4 Zoom)</div>
+                </div>
+                <div class="tl-item">
+                    <div class="tl-dot"></div>
+                    <div class="tl-date">10/5/2026</div>
+                    <div class="tl-event">🏁 Kết thúc & Ôn thi</div>
+                    <div class="tl-desc">Sẵn sàng cho thi HK2 và thi tốt nghiệp</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- INSTRUCTOR SHOWCASE - Slide1 -->
+    <section id="instructor">
+        <div class="instructor-inner">
+            <span class="badge">📸 Về khoá học</span>
+            <h2 class="section-title" style="margin-top:16px; margin-bottom: 28px;">
+                Khoá học được thiết kế <span class="highlight">bài bản & chuyên nghiệp</span>
+            </h2>
+            <img src="../../../ảnh quảng cáo/Slide1.PNG"
+                alt="Khoá học Hoá Học 10 - Có 18 video, 5 buổi zoom trực tiếp, chấm chữa từng em" loading="lazy" />
+        </div>
+    </section>
+
+    <!-- RESULTS -->
+    <section id="results">
+        <div class="container">
+            <div class="results-intro">
+                <span class="badge">Cam kết đầu ra</span>
+                <h2 class="section-title" style="margin-top:16px;">
+                    Sau khoá học, <span class="highlight">bạn sẽ</span>
+                </h2>
+            </div>
+            <div class="results-grid">
+                <div class="result-card">
+                    <div class="result-icon">📐</div>
+                    <h4>Kiến thức từ cơ bản đến nâng cao</h4>
+                    <p>Nằm lòng toàn bộ kiến thức Hoá 10 HK2 – nền tảng cho thi tốt nghiệp.</p>
+                </div>
+                <div class="result-card">
+                    <div class="result-icon">🎯</div>
+                    <h4>Mục tiêu 8+ điểm</h4>
+                    <p>Đủ kỹ năng làm bài đạt 8 điểm trở lên trong cả thi HK và thi tốt nghiệp (phần lớp 10).</p>
+                </div>
+                <div class="result-card">
+                    <div class="result-icon">🧠</div>
+                    <h4>Tư duy hệ thống</h4>
+                    <p>Biết cách học Hoá cấp 3 đúng phương pháp – không học vẹt, không phụ thuộc mẹo vặt.</p>
+                </div>
+                <div class="result-card">
+                    <div class="result-icon">📄</div>
+                    <h4>Tự tin với đề thi mới</h4>
+                    <p>Quen tay với cấu trúc thi 2025–2026: trắc nghiệm nhiều PA, đúng/sai, trả lời ngắn.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- PRICING -->
+    <section id="pricing">
+        <div class="container">
+            <div class="pricing-intro">
+                <span class="badge">Học phí khoá học</span>
+                <h2 class="section-title" style="margin-top:16px;">
+                    Chọn gói <span class="highlight">phù hợp với bạn</span>
+                </h2>
+                <p style="color:var(--muted); margin-top:12px;">
+                    Học từ 1/3 đến 10/5 · Đóng học phí một lần · Không phát sinh thêm
+                </p>
+            </div>
+            <div class="pricing-grid">
+                <!-- Standard -->
+                <div class="price-card">
+                    <div class="price-tier">Gói Tiêu Chuẩn</div>
+                    <div class="price-name">Tự học có hỗ trợ</div>
+                    <div class="price-amount">1.200.000</div>
+                    <div class="price-period">đồng · trọn khoá</div>
+                    <ul class="price-features">
+                        <li><span class="check">✓</span> 18 video bài giảng đầy đủ</li>
+                        <li><span class="check">✓</span> File bài tập phân loại theo dạng</li>
+                        <li><span class="check">✓</span> File lý thuyết tóm tắt mỗi chủ đề</li>
+                        <li><span class="check">✓</span> Tham dự 5 buổi Zoom trực tiếp</li>
+                        <li><span class="check">✓</span> Đề kiểm tra chuẩn thi theo từng chủ đề</li>
+                        <li><span class="cross">✗</span> Chấm chữa bài cá nhân</li>
+                        <li><span class="cross">✗</span> Phân tích lỗi sai riêng</li>
+                    </ul>
+                    <a href="#cta-final" class="btn btn-outline" style="width:100%; text-align:center;">Đăng ký Tiêu
+                        Chuẩn</a>
+                </div>
+                <!-- Featured -->
+                <div class="price-card featured">
+                    <div class="popular-tag">⭐ Được chọn nhiều nhất</div>
+                    <div class="price-tier">Gói Đồng Hành</div>
+                    <div class="price-name">Học có thầy bên cạnh</div>
+                    <div class="price-amount" style="color:var(--primary);">1.699.000</div>
+                    <div class="price-period">đồng · trọn khoá</div>
+                    <ul class="price-features">
+                        <li><span class="check">✓</span> 18 video bài giảng đầy đủ</li>
+                        <li><span class="check">✓</span> File bài tập phân loại theo dạng</li>
+                        <li><span class="check">✓</span> File lý thuyết tóm tắt mỗi chủ đề</li>
+                        <li><span class="check">✓</span> Tham dự 5 buổi Zoom trực tiếp</li>
+                        <li><span class="check">✓</span> Đề kiểm tra chuẩn thi theo từng chủ đề</li>
+                        <li><span class="check" style="color:var(--accent2);">★</span> <strong
+                                style="color:var(--white);">Chấm chữa bài cá nhân từng video</strong></li>
+                        <li><span class="check" style="color:var(--accent2);">★</span> <strong
+                                style="color:var(--white);">Phân tích lỗi sai, nhận xét riêng</strong></li>
+                    </ul>
+                    <a href="#cta-final" class="btn btn-primary" style="width:100%; text-align:center;">Đăng ký Đồng
+                        Hành →</a>
+                </div>
+            </div>
+            <p style="text-align:center; margin-top:24px; color:var(--muted); font-size:14px;">
+                🔒 Đăng ký xong sẽ được thêm vào nhóm lớp và nhận tài liệu hướng dẫn học.
+            </p>
+        </div>
+    </section>
+
+    <!-- FAQ -->
+    <section id="faq">
+        <div class="container">
+            <div class="faq-intro">
+                <span class="badge">Câu hỏi thường gặp</span>
+                <h2 class="section-title" style="margin-top:16px;">Bạn đang <span class="highlight">thắc mắc</span> điều
+                    gì?</h2>
+            </div>
+            <div class="faq-list">
+                <details class="faq-item">
+                    <summary class="faq-q">
+                        Khoá học phù hợp với học sinh nào?
+                        <span>＋</span>
+                    </summary>
+                    <div class="faq-a">
+                        Khoá học dành cho học sinh lớp 10 đã chọn môn Hoá học trong tổ hợp xét tuyển tốt nghiệp. Phù hợp
+                        cả học sinh học từ đầu lẫn học sinh muốn củng cố lại kiến thức đã học.
+                    </div>
+                </details>
+                <details class="faq-item">
+                    <summary class="faq-q">
+                        Tôi nộp bài tập bằng cách nào?
+                        <span>＋</span>
+                    </summary>
+                    <div class="faq-a">
+                        Học sinh làm bài vào vở hoặc file Word, chụp ảnh/ chụp màn hình rồi gửi vào nhóm lớp (Zalo hoặc
+                        Google Classroom). Thầy/cô sẽ chấm và reply nhận xét ngay trong nhóm.
+                    </div>
+                </details>
+                <details class="faq-item">
+                    <summary class="faq-q">
+                        Video có thể xem lại được không?
+                        <span>＋</span>
+                    </summary>
+                    <div class="faq-a">
+                        Có. Toàn bộ 18 video được lưu trữ và học sinh có thể xem lại không giới hạn trong thời gian tham
+                        gia khoá học.
+                    </div>
+                </details>
+                <details class="faq-item">
+                    <summary class="faq-q">
+                        Nếu tôi bận, không tham gia Zoom được thì sao?
+                        <span>＋</span>
+                    </summary>
+                    <div class="faq-a">
+                        Các buổi Zoom đều được ghi lại và chia sẻ trong nhóm. Bạn có thể xem lại sau. Tuy nhiên, tham
+                        gia trực tiếp sẽ giúp bạn hỏi bài và tương tác hiệu quả hơn.
+                    </div>
+                </details>
+                <details class="faq-item">
+                    <summary class="faq-q">
+                        Mức giá có thể thương lượng không?
+                        <span>＋</span>
+                    </summary>
+                    <div class="faq-a">
+                        Học phí đã được tính toán để phù hợp với chất lượng khoá học. Trong trường hợp đặc biệt hoặc
+                        đăng ký nhóm từ 3 bạn trở lên, hãy nhắn tin trực tiếp để được hỗ trợ.
+                    </div>
+                </details>
+            </div>
+        </div>
+    </section>
+
+    <!-- TEACHER + QR -->
+    <section id="teacher-qr" style="padding: 80px 20px; background: var(--bg2);">
+        <div class="container">
+            <div style="text-align:center; margin-bottom: 48px;">
+                <span class="badge">👩‍🏫 Giáo viên phụ trách</span>
+                <h2 class="section-title" style="margin-top:16px;">
+                    Học cùng cô — <span class="highlight">có đồng hành thực sự</span>
+                </h2>
+            </div>
+            <div
+                style="display:flex; gap:40px; align-items:center; flex-wrap:wrap; justify-content:center; max-width:900px; margin: 0 auto;">
+                <!-- Teacher Photo -->
+                <div style="flex:0 0 auto; text-align:center;">
+                    <div style="position:relative; display:inline-block;">
+                        <div
+                            style="width:260px; height:320px; border-radius:24px; overflow:hidden; border:3px solid rgba(0,201,167,0.4); box-shadow:0 24px 60px rgba(0,0,0,0.5);">
+                            <img src="../../../../Khoá học online lấy gốc hoá/ảnh hoá học/z6902067370996_4b6f64e3f88c1a6c6ea31c6b3254f733.jpg"
+                                alt="Giáo viên Hoá 10 online"
+                                style="width:100%; height:100%; object-fit:cover; object-position:center top;" />
+                        </div>
+                        <div
+                            style="position:absolute; bottom:-14px; left:50%; transform:translateX(-50%); background:linear-gradient(135deg,var(--primary),var(--primary-dark)); color:#0b0f1a; font-size:13px; font-weight:700; padding:6px 20px; border-radius:100px; white-space:nowrap;">
+                            Giáo viên Hoá học THPT
+                        </div>
+                    </div>
+                </div>
+                <!-- Info -->
+                <div style="flex:1; min-width:240px;">
+                    <h3 style="font-size:24px; font-weight:800; color:var(--white); margin-bottom:20px;">Giáo
+                        viên<br /><span style="color:var(--primary);">Hoá Học Lớp 10</span></h3>
+                    <ul style="list-style:none; display:flex; flex-direction:column; gap:14px;">
+                        <li style="display:flex; gap:12px; align-items:flex-start; color:var(--muted); font-size:15px;">
+                            <span style="color:var(--primary); font-size:18px; flex-shrink:0; margin-top:1px;">✓</span>
+                            Giáo viên Hoá học THPT nhiều năm kinh nghiệm
+                        </li>
+                        <li style="display:flex; gap:12px; align-items:flex-start; color:var(--muted); font-size:15px;">
+                            <span style="color:var(--primary); font-size:18px; flex-shrink:0; margin-top:1px;">✓</span>
+                            Chuyên dạy theo phương pháp tư duy hệ thống, không học vẹt
+                        </li>
+                        <li style="display:flex; gap:12px; align-items:flex-start; color:var(--muted); font-size:15px;">
+                            <span style="color:var(--primary); font-size:18px; flex-shrink:0; margin-top:1px;">✓</span>
+                            Chấm chữa bài cá nhân, phân tích lỗi sai tận tình từng học sinh
+                        </li>
+                        <li style="display:flex; gap:12px; align-items:flex-start; color:var(--muted); font-size:15px;">
+                            <span style="color:var(--primary); font-size:18px; flex-shrink:0; margin-top:1px;">✓</span>
+                            Khoá học được thiết kế khoa học bám sát cấu trúc thi TNTHPT mới
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- QR SECTION -->
+            <div
+                style="margin-top:64px; text-align:center; padding:40px 32px; background:var(--card); border:1px solid var(--border); border-radius:24px; max-width:600px; margin-left:auto; margin-right:auto; margin-top:64px;">
+                <h3 style="font-size:20px; font-weight:800; color:var(--white); margin-bottom:8px;">📲 Đăng ký khoá học
+                    ngay</h3>
+                <p style="color:var(--muted); font-size:15px; margin-bottom:28px;">Quét mã QR bằng Zalo hoặc camera điện
+                    thoại để tham gia nhóm lớp và đăng ký học</p>
+                <div style="display:flex; gap:32px; justify-content:center; align-items:center; flex-wrap:wrap;">
+                    <div style="text-align:center;">
+                        <img src="../../../../Khoá học online lấy gốc hoá/ảnh hoá học/z6901517773938_57b8c01a7bd661d1b01215d8ac0dedd2.jpg"
+                            alt="QR Code đăng ký khoá học Hoá 10 qua Zalo"
+                            style="width:200px; height:auto; border-radius:16px; border:2px solid rgba(0,201,167,0.3); box-shadow:0 12px 40px rgba(0,0,0,0.4);" />
+                        <p style="color:var(--primary); font-size:13px; font-weight:600; margin-top:10px;">Nhóm Zalo
+                            khoá học</p>
+                    </div>
+                    <div style="text-align:left; max-width:220px;">
+                        <div style="display:flex; flex-direction:column; gap:10px;">
+                            <div
+                                style="background:rgba(0,201,167,0.1); border:1px solid rgba(0,201,167,0.25); border-radius:12px; padding:14px 16px;">
+                                <div style="font-size:13px; font-weight:700; color:var(--white); margin-bottom:4px;">📱
+                                    Cách 1: Quét QR</div>
+                                <div style="font-size:13px; color:var(--muted);">Mở Zalo → Quét mã bên trái để vào nhóm
+                                    lớp</div>
+                            </div>
+                            <div
+                                style="background:rgba(124,58,237,0.1); border:1px solid rgba(124,58,237,0.25); border-radius:12px; padding:14px 16px;">
+                                <div style="font-size:13px; font-weight:700; color:var(--white); margin-bottom:4px;">💬
+                                    Cách 2: Nhắn tin trực tiếp</div>
+                                <div style="font-size:13px; color:var(--muted);">Nhắn Zalo cho cô để đăng ký và nhận
+                                    link nhóm</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FINAL CTA -->
+    <section id="cta-final">
+        <div class="container">
+            <h2 class="cta-hl">
+                Bắt đầu từ <span class="highlight">1/3/2026</span><br />— Đừng để mùa thi qua đi rồi hối tiếc
+            </h2>
+            <p class="cta-sub">
+                Số lượng học sinh có hạn để đảm bảo chất lượng chấm chữa. Đăng ký sớm để giữ chỗ.
+            </p>
+            <a href="https://m.me/" class="btn btn-primary" style="font-size:18px; padding:18px 48px;">
+                Đăng ký ngay – Giữ chỗ hôm nay 🚀
+            </a>
+            <div class="deadline-note">
+                <span>📅</span>
+                <span>Khai giảng <strong style="color:var(--white);">1/3/2026</strong> &nbsp;·&nbsp; Kết thúc <strong
+                        style="color:var(--white);">10/5/2026</strong> &nbsp;·&nbsp; Chỉ nhận tối đa 20–25 học
+                    sinh</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer>
+        <div class="container">
+            <p style="margin-bottom:8px;"><strong>Hoá 10 Online – Học kỳ 2 · 2025–2026</strong></p>
+            <p>3 chủ đề · 18 video · 5 buổi Zoom · Chấm chữa cá nhân · Học từ 1/3 đến 10/5</p>
+            <p style="margin-top: 16px; font-size:13px;">© 2026 · Mọi liên hệ: <a href="mailto:"
+                    style="color:var(--primary);">Email/Zalo của thầy/cô</a></p>
+        </div>
+    </footer>
+
+</body>
+
+</html>

@@ -1,0 +1,20 @@
+{
+	"folders": [
+		{
+			"path": "../../../../Antigravity/Skill/awf-main/schemas"
+		},
+		{
+			"path": "../../../../Antigravity/Skill/awf-main/templates"
+		},
+		{
+			"path": "../../../../Antigravity/Skill/awf-main/workflows"
+		},
+		{
+			"path": "../../../../Antigravity/Skill/awf-main/docs"
+		},
+		{
+			"path": "../../../../Antigravity/Skill/awf-main/plans"
+		}
+	],
+	"settings": {}
+}
